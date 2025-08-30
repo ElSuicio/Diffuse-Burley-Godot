@@ -25,8 +25,6 @@ This is an addon for Godot 4.4+ that adds the `Burley` node to the visual shader
 
 <div align="center"> Burley Diffuse Reflectance Model (Render). </div>
 
-<br>
-
 # Links & Support
 - [itch.io](https://interdreamsoft.itch.io/)
 - [x.com](https://x.com/ElSuicio)
