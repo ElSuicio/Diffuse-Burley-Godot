@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dd1ghs3olq6c5"]
+
+[ext_resource type="Shader" uid="uid://cpn0ax4t1u5br" path="res://assets/materials/shaders/DiffuseBurley.tres" id="1_lbq86"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_lbq86")
+shader_parameter/AlbedoColor = Color(1, 1, 1, 1)
+shader_parameter/Roughness = 1.0
