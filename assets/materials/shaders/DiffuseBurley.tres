@@ -1,6 +1,6 @@
 [gd_resource type="VisualShader" load_steps=14 format=3 uid="uid://cpn0ax4t1u5br"]
 
-[ext_resource type="Script" uid="uid://bpu0lhxrryjmm" path="res://addons/diffuse_burley/DiffuseBurley.gd" id="1_hkvn1"]
+[ext_resource type="Script" uid="uid://dovt2bh38o3i6" path="res://addons/diffuse burley/DiffuseBurley.gd" id="1_ed67v"]
 
 [sub_resource type="VisualShaderNodeColorParameter" id="VisualShaderNodeColorParameter_hkvn1"]
 expanded_output_ports = [0]
@@ -18,14 +18,14 @@ default_value = 1.0
 [sub_resource type="VisualShaderNodeInput" id="VisualShaderNodeInput_tq46t"]
 input_name = "view"
 
+[sub_resource type="VisualShaderNodeCustom" id="VisualShaderNodeCustom_yh2sh"]
+initialized = true
+script = ExtResource("1_ed67v")
+
 [sub_resource type="VisualShaderNodeInput" id="VisualShaderNodeInput_2cgfn"]
 input_name = "diffuse"
 
 [sub_resource type="VisualShaderNodeVectorOp" id="VisualShaderNodeVectorOp_hkvn1"]
-
-[sub_resource type="VisualShaderNodeCustom" id="VisualShaderNodeCustom_pd5mr"]
-initialized = true
-script = ExtResource("1_hkvn1")
 
 [sub_resource type="VisualShaderNodeInput" id="VisualShaderNodeInput_d6ukp"]
 input_name = "light"
@@ -103,8 +103,8 @@ void light() {
 	float n_out8p0 = ROUGHNESS;
 
 
-	vec3 n_out4p0;
-// Burley:4
+	vec3 n_out11p0;
+// Burley:11
 	{
 		
 			const float INV_PI = 0.318309;
@@ -129,13 +129,13 @@ void light() {
 			
 			float diffuse_burley = fd_V * fd_L * cNdotL;
 			
-			n_out4p0 = n_out6p0 * n_out7p0 * diffuse_burley * INV_PI;
+			n_out11p0 = n_out6p0 * n_out7p0 * diffuse_burley * INV_PI;
 			
 	}
 
 
 // VectorOp:3
-	vec3 n_out3p0 = n_out2p0 + n_out4p0;
+	vec3 n_out3p0 = n_out2p0 + n_out11p0;
 
 
 // Output:0
@@ -144,7 +144,7 @@ void light() {
 
 }
 "
-graph_offset = Vector2(-610.303, -29.8182)
+graph_offset = Vector2(-437.124, -218.804)
 nodes/fragment/0/position = Vector2(400, 140)
 nodes/fragment/2/node = SubResource("VisualShaderNodeColorParameter_hkvn1")
 nodes/fragment/2/position = Vector2(-40, 140)
@@ -157,8 +157,6 @@ nodes/light/2/node = SubResource("VisualShaderNodeInput_2cgfn")
 nodes/light/2/position = Vector2(0, 140)
 nodes/light/3/node = SubResource("VisualShaderNodeVectorOp_hkvn1")
 nodes/light/3/position = Vector2(240, 100)
-nodes/light/4/node = SubResource("VisualShaderNodeCustom_pd5mr")
-nodes/light/4/position = Vector2(0, 220)
 nodes/light/5/node = SubResource("VisualShaderNodeInput_d6ukp")
 nodes/light/5/position = Vector2(-260, 140)
 nodes/light/6/node = SubResource("VisualShaderNodeInput_a0uxu")
@@ -171,4 +169,6 @@ nodes/light/9/node = SubResource("VisualShaderNodeInput_63wjb")
 nodes/light/9/position = Vector2(-260, 60)
 nodes/light/10/node = SubResource("VisualShaderNodeInput_tq46t")
 nodes/light/10/position = Vector2(-260, 220)
-nodes/light/connections = PackedInt32Array(2, 0, 3, 0, 3, 0, 0, 0, 4, 0, 3, 1, 9, 0, 4, 0, 5, 0, 4, 1, 10, 0, 4, 2, 6, 0, 4, 3, 7, 0, 4, 4, 8, 0, 4, 5)
+nodes/light/11/node = SubResource("VisualShaderNodeCustom_yh2sh")
+nodes/light/11/position = Vector2(0, 240)
+nodes/light/connections = PackedInt32Array(2, 0, 3, 0, 3, 0, 0, 0, 11, 0, 3, 1, 9, 0, 11, 0, 5, 0, 11, 1, 10, 0, 11, 2, 6, 0, 11, 3, 7, 0, 11, 4, 8, 0, 11, 5)

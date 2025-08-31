@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dd1ghs3olq6c5"]
 
-[ext_resource type="Shader" uid="uid://cpn0ax4t1u5br" path="res://assets/materials/shaders/DiffuseBurley.tres" id="1_lbq86"]
+[ext_resource type="Shader" uid="uid://cpn0ax4t1u5br" path="res://addons/diffuse burley/materials/shaders/DiffuseBurley.tres" id="1_lbq86"]
 
 [resource]
 render_priority = 0
