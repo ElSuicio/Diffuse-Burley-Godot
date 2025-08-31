@@ -5,7 +5,7 @@ This is an addon for Godot 4.4+ that adds the `Burley` node to the visual shader
 
 <div align="center">
   
-<img src = "https://raw.githubusercontent.com/ElSuicio/Diffuse-Burley-Godot/refs/heads/main/BurleyNode.png" alt = "Burley Diffuse Reflectance Model (Render).">
+<img src = "https://raw.githubusercontent.com/ElSuicio/Diffuse-Burley-Godot/refs/heads/main/BurleyNode.png" alt = "Burley Diffuse Reflectance Model (Node).">
 
 </div>
 
@@ -17,7 +17,7 @@ This is an addon for Godot 4.4+ that adds the `Burley` node to the visual shader
 
 <div align="center">
   
-<img src = "https://raw.githubusercontent.com/ElSuicio/Diffuse-Burley-Godot/refs/heads/main/render/1152x648/Burley.png" alt = "Burley Diffuse Reflectance Model (Node).">
+<img src = "https://raw.githubusercontent.com/ElSuicio/Diffuse-Burley-Godot/refs/heads/main/render/1152x648/Burley.png" alt = "Burley Diffuse Reflectance Model (Render).">
 
 </div>
 
