@@ -5,7 +5,7 @@ This is an addon for Godot 4.4+ that adds the `Burley` node to the visual shader
 
 <div align="center">
   
-<img src = "https://raw.githubusercontent.com/ElSuicio/Diffuse-Burley-Godot/refs/heads/main/BurleyNode.png" alt = "Burley Diffuse Reflectance Model (Node).">
+<img src = "https://raw.githubusercontent.com/ElSuicio/Diffuse-Burley-Godot/refs/heads/main/BurleyNode.png" alt = "BurleyNode.">
 
 </div>
 
@@ -17,7 +17,7 @@ This is an addon for Godot 4.4+ that adds the `Burley` node to the visual shader
 
 <div align="center">
   
-<img src = "https://raw.githubusercontent.com/ElSuicio/Diffuse-Burley-Godot/refs/heads/main/render/1152x648/Burley.png" alt = "Burley Diffuse Reflectance Model (Render).">
+<img src = "https://raw.githubusercontent.com/ElSuicio/Diffuse-Burley-Godot/refs/heads/main/render/1152x648/Burley.png" alt = "BurleyRender.">
 
 </div>
 
@@ -29,7 +29,7 @@ This is an addon for Godot 4.4+ that adds the `Burley` node to the visual shader
 - [itch.io](https://interdreamsoft.itch.io/)
 - [x.com](https://x.com/ElSuicio)
 
-If you liked it and want to support it, you can donate via [PayPal](https://www.paypal.com/donate/?hosted_button_id=NRD94T2N7XZ6J) or [ItchIo](https://interdreamsoft.itch.io/lambert-light-model) . Your support is very much appreciated and helps me keep going!
+If you liked it and want to support it, you can donate via [PayPal](https://www.paypal.com/donate/?hosted_button_id=NRD94T2N7XZ6J) or [ItchIo](https://interdreamsoft.itch.io/burley-light-model) . Your support is very much appreciated and helps me keep going!
 
 
 [ Contact Email: interdreamsoft@gmail.com ]
